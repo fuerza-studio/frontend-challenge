@@ -5,7 +5,7 @@
 </p>
 
 # Front-end challenge
-Would you like to be part of a great team? Contribute with so manu amazing project?
+Would you like to be part of a great team? Contribute with so many amazing project?
 So, let's start by challenging you to create a front-end page with cool things.
 
 ## Summary
@@ -25,7 +25,7 @@ Run a local server on the port `9000`.
 Create the `dist` folder with all builded files.
 
 #### `yarn serve`
-After builded you can serve using the `http-server` packages, by default the port will be `8080`.
+After builded you can serve using the `http-server` package, by default the port will be `8080`.
 
 #### `yarn lint`
 Run lint for JavaScript and SASS.
@@ -33,7 +33,7 @@ Run lint for JavaScript and SASS.
 ## Features
 - [SASS](https://sass-lang.com/) + [PostCSS](https://github.com/postcss/postcss) for stylesheets.
 - ES6 for JavaScript. 
-- Pure [Webpack](https://webpack.js.org/) to transpile and bundle assets, create sprites, optimize images etc.
+- Pure [Webpack](https://webpack.js.org/) to transpile and bundle assets, _create sprites, optimize images_, etc.
 - [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) for synchronized browser development.
 - JavaScript and SASS linting and fixing using a single yarn command _(comming)_.
 - CSS package:
