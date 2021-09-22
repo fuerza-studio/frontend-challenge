@@ -6,11 +6,13 @@ import '@styles';
 import './images';
 import App from './app';
 import Example from './components/example';
+import Header from './components/header';
 
 // Your code goes here ...
 $(() => {
   const app = new App([
     new Example(),
+    new Header(),
   ]);
 
   app.bootstrap();

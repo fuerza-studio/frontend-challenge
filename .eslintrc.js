@@ -9,6 +9,7 @@ module.exports = {
     "import/first": "off",
   },
   "globals": {
+    "window": true,
     "document": true,
   }
 };

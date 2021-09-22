@@ -31,14 +31,23 @@ $font-family-sans-serif: 'Helvetica Neue', sans-serif;
 $font-family-serif: Times, 'Times New Roman', serif;
 
 // Font sizes.
+$font-sizes: (
+  xl: 30px,
+  lg: 24px, 
+  md: 20px, 
+  b: 16px, 
+  sm: 14px, 
+  xs: 12px, 
+);
+
 $font-size-base: 1rem;
 
-$h1-font-size: px-to-rem(30px);
-$h2-font-size: px-to-rem(24px);
-$h3-font-size: px-to-rem(20px);
-$h4-font-size: $font-size-base;
-$h5-font-size: px-to-rem(14px);
-$h6-font-size: px-to-rem(12px);
+$h1-font-size: map-get($font-sizes, xl);
+$h2-font-size: map-get($font-sizes, lg);
+$h3-font-size: map-get($font-sizes, md);
+$h4-font-size: map-get($font-sizes, b);
+$h5-font-size: map-get($font-sizes, sm);
+$h6-font-size: map-get($font-sizes, xs);
 
 /**
  *
@@ -85,6 +94,7 @@ $container-max-widths: (
  *
  */
 $header-height-desktop: 90px;
+$header-height-mobile: 70px;
 
 /**
  *
