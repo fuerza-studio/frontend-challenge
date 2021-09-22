@@ -1,10 +1,8 @@
-import $ from 'jquery';
-
 export default class Header {
   constructor() {
     this.selector = '[data-component="header"]';
 
-    const $header = $(this.selector);
+    const $header = document.querySelector(this.selector);
 
     this.classes = {
       toggleMenuActive: 'is-active',
@@ -13,10 +11,10 @@ export default class Header {
     };
 
     this.nodes = {
-      root: $('html'),
+      root: document.querySelector('html'),
       header: $header,
-      menu: $header.find('[data-element="menu"]'),
-      toggleMenu: $header.find('[data-element="toggle-menu"]'),
+      menu: $header.querySelector('[data-element="menu"]'),
+      toggleMenu: $header.querySelector('[data-element="toggle-menu"]'),
     };
   }
 
@@ -26,14 +24,14 @@ export default class Header {
   }
 
   addEventListeners() {
-    this.nodes.toggleMenu.on('click', this.onToggleMenu.bind(this));
+    this.nodes.toggleMenu.addEventListener('click', this.onToggleMenu.bind(this));
   }
 
   onToggleMenu(event) {
     event.preventDefault();
 
-    this.nodes.root.toggleClass(this.classes.rootMobileClass);
-    this.nodes.menu.toggleClass(this.classes.menuActive);
-    this.nodes.toggleMenu.toggleClass(this.classes.toggleMenuActive);
+    this.nodes.root.classList.toggle(this.classes.rootMobileClass);
+    this.nodes.menu.classList.toggle(this.classes.menuActive);
+    this.nodes.toggleMenu.classList.toggle(this.classes.toggleMenuActive);
   }
 }
