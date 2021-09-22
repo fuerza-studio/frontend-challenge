@@ -1,0 +1,40 @@
+%style-guide-title {
+  border-bottom: 1px solid #ccc;
+  color: #8c8c8c;
+  margin-bottom: 3rem;
+}
+
+.page-template-styleguide {
+  .page {
+    padding-bottom: 9rem;
+  }
+
+  .page__title {
+    margin-bottom: 5rem;
+    padding-top: 6rem;
+  }
+
+  .c-block:not(:last-child),
+  .section:not(:last-child) {
+    margin-bottom: 12rem;
+  }
+
+  .section__title {
+    @extend %style-guide-title;
+  }
+
+  .section__subtitle {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+
+  .page__content {
+    margin-bottom: 12rem;
+
+    > h2,
+    .section__title {
+      @extend %style-guide-title;
+      @include make-container();
+    }
+  }
+}

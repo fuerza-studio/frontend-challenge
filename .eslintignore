@@ -1,0 +1,6 @@
+# Ignore all files from vendor folder.
+vendor/*.js
+
+# Ignore all files except from src folder.
+**/*.js
+!src/**/*.js

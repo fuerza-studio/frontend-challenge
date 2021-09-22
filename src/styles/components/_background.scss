@@ -1,0 +1,22 @@
+.c-background {
+  &__image {
+    @include position-fill(absolute);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--fill {
+    @include position-fill(absolute);
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+%with-background,
+.c-with-background {
+  @include background-support();
+}

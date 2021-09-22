@@ -1,0 +1,58 @@
+/**
+ *
+ * Header
+ *
+ */
+.header {
+  background-color: #444;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+
+  &__body {
+    align-items: center;
+    display: flex;
+    height: $header-height-desktop;
+  }
+
+  &__logo {
+    margin-right: px-to-rem(150px);
+    max-width: px-to-rem(300px);
+    width: 100%;
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      @extend %img-responsive;
+    }
+  }
+
+  &__actions {
+    margin-left: auto;
+  }
+}
+
+/**
+ *
+ * Admin Bar
+ *
+ */
+.admin-bar {
+  .header {
+    top: $adminbar-height-desktop;
+
+    @include admin-bar-tablet {
+      top: $adminbar-height-tablet;
+    }
+
+    @include admin-bar-mobile {
+      &.header--sticky {
+        top: 0;
+      }
+    }
+  }
+}

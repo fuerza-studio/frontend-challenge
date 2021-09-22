@@ -1,0 +1,24 @@
+// Completely remove the default button appearance.
+@mixin remove-button-appearance() {
+  appearance: none;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline: inherit;
+  padding: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+// Basic button style, based on Bootstrap.
+@mixin btn {
+  cursor: if($enable-button-pointers, pointer, null);
+  display: inline-block;
+  text-align: center;
+  text-decoration: if($link-decoration == none, null, none);
+  user-select: none;
+  vertical-align: middle;
+}

@@ -1,0 +1,20 @@
+/**
+ *
+ * Menu Main
+ *
+ */
+.menu-main {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  > li + li {
+    margin-left: px-to-rem(32px);
+  }
+
+  a {
+    color: color('white');
+    line-height: (18/16);
+    text-decoration: none;
+  }
+}

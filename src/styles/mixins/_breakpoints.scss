@@ -1,0 +1,109 @@
+/**
+ *
+ * Mobile First
+ *
+ */
+
+@mixin mobile-up {
+  @include media-breakpoint-up(sm) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @include media-breakpoint-up(md) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @include media-breakpoint-up(lg) {
+    @content;
+  }
+}
+
+@mixin desktop-md-up {
+  @include media-breakpoint-up(xl) {
+    @content;
+  }
+}
+
+/**
+ *
+ * Desktop First
+ *
+ */
+
+@mixin desktop-md-down {
+  @include media-breakpoint-down(xl) {
+    @content;
+  }
+}
+
+@mixin desktop-down {
+  @include media-breakpoint-down(lg) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @include media-breakpoint-down(md) {
+    @content;
+  }
+}
+
+@mixin mobile-down {
+  @include media-breakpoint-down(sm) {
+    @content;
+  }
+}
+
+@mixin mobile-small-down {
+  @include media-breakpoint-down(xs) {
+    @content;
+  }
+}
+
+/**
+ *
+ * Specific Resolution Breakpoints
+ *
+ */
+
+@mixin tablet-only() {
+  @include media-breakpoint-between(md, md) {
+    @content;
+  }
+}
+
+@mixin small-screen-only() {
+  @include media-breakpoint-between(lg, lg) {
+    @content;
+  }
+}
+
+@mixin small-to-md-screen-only() {
+  @include media-breakpoint-between(lg, xl) {
+    @content;
+  }
+}
+
+/**
+ *
+ * WordPress Breakpoints
+ *
+ */
+
+// mobile with admin bar
+@mixin admin-bar-mobile {
+  @media (max-width: $breakpoint-responsive-adminbar-mobile) {
+    @content;
+  }
+}
+
+// tablet with admin bar
+@mixin admin-bar-tablet {
+  @media (max-width: $breakpoint-responsive-adminbar-tablet) {
+    @content;
+  }
+}

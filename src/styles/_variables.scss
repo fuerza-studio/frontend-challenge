@@ -1,0 +1,100 @@
+/**
+ *
+ * Options
+ *
+ */
+
+// Remove Bootstrap prefix
+// for CSS variables on :root.
+// (by default BS insert a bs- prefix)
+$variable-prefix: '';
+
+/**
+ *
+ * Colors
+ *
+ */
+$colors: (
+  'blue': #07a
+);
+$theme-colors: ();
+
+// Text colors.
+$body-color: #222;
+
+/**
+ *
+ * Typography
+ *
+ */
+$font-family-sans-serif: 'Helvetica Neue', sans-serif;
+$font-family-serif: Times, 'Times New Roman', serif;
+
+// Font sizes.
+$font-size-base: 1rem;
+
+$h1-font-size: px-to-rem(30px);
+$h2-font-size: px-to-rem(24px);
+$h3-font-size: px-to-rem(20px);
+$h4-font-size: $font-size-base;
+$h5-font-size: px-to-rem(14px);
+$h6-font-size: px-to-rem(12px);
+
+/**
+ *
+ * Transitions
+ *
+ */
+$trs: 0.3s;
+$trs-slow: 0.5s;
+
+/**
+ *
+ * Grid
+ *
+ */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+
+/**
+ *
+ * Container
+ *
+ */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+/**
+ *
+ * Header
+ *
+ */
+$header-height-desktop: 90px;
+
+/**
+ *
+ * WordPress Breakpoints
+ *
+ */
+$breakpoint-responsive-xs: 413px;
+$breakpoint-responsive-adminbar-mobile: 600px;
+$breakpoint-responsive-adminbar-tablet: 782px;
+
+// WordPress admin bar
+$adminbar-height-desktop: 32px;
+$adminbar-height-tablet: 46px;

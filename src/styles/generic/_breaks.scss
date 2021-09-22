@@ -1,0 +1,55 @@
+@each $key, $val in $grid-breakpoints {
+  br.#{$key} {
+    display: none;
+
+    @include media-breakpoint-only($key) {
+      display: inline;
+    }
+  }
+
+  br.#{$key}-up {
+    display: none;
+
+    @include media-breakpoint-up($key) {
+      display: inline;
+    }
+  }
+
+  br.#{$key}-down {
+    display: none;
+
+    @include media-breakpoint-down($key) {
+      display: inline;
+    }
+  }
+
+  .br--#{$key} {
+    br {
+      display: none;
+
+      @include media-breakpoint-only($key) {
+        display: inline;
+      }
+    }
+  }
+
+  .br--#{$key}-up {
+    br {
+      display: none;
+
+      @include media-breakpoint-up($key) {
+        display: inline;
+      }
+    }
+  }
+
+  .br--#{$key}-down {
+    br {
+      display: none;
+
+      @include media-breakpoint-down($key) {
+        display: inline;
+      }
+    }
+  }
+}

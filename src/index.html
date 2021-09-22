@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <!-- start-header -->
+  <header class="header" data-component="header">
+    <div class="container">
+      <div class="header__body">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <!-- Logo goes here -->
+          </a>
+        </div>
+        <div class="header__menu" data-element="menu">
+          <ul class="menu menu-main">
+            <li class="menu-item">
+              <a href="#">A Empresa</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Serviços</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Equipe</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Galeria</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="btn-nav"
+          data-target="#navbar"
+          data-element="toggle-menu"
+          aria-controls="navbar"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- /end-header -->
+
+  <!-- start-hero -->
+  <section class="hero">
+    <!--
+      - You should put your markup here.
+      - Don't forget to follow the BEMCSS conventional classes.
+      - The background should be fixed (will not change when pass over slides).
+      - We use the Swiper (https://swiperjs.com) as our default library.
+     -->
+  </section>
+  <!-- /end-hero -->
+
+  <!-- start-short-content -->
+  <section class="short-content">
+    <div class="container">
+      <!--
+        - Style de card short-content
+        - Add it to a grid list.
+       -->
+      <div class="card-short-content">
+        <figure class="card-short-content__figure">
+          <img src="/images/awesome-futbol.svg" alt="" />
+        </figure>
+        <div class="card-short-content__inner">
+          <h3 class="card-short-content__title">Lorem Ipsum is simple dummy!</h3>
+          <div class="the-content">
+            <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /end-short-content -->
+
+  <!-- start-blog -->
+  <section class="blog">
+    <div class="container">
+      <div class="card-post">
+        <!--
+          - Create your own card-post markup;
+          - Style it.
+          - Add it to a grid list.
+          - Don't forget that all the page should be responsible.
+         -->
+      </div>
+    </div>
+  </section>
+  <!-- /end-blog -->
+  
+  <!-- start-cta -->
+  <div class="cta">
+    <!--
+      - Put your CTA (call-to-action) markup here.
+    -->
+  </div>
+  <!-- /end-cta -->
+  
+  <!-- start-footer -->
+  <footer class="footer">
+    <!--
+      - Put your Footer markup here.
+    -->
+  </footer>
+  <!-- /end-footer -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+@mixin arrow-outline-base(
+  $color: $body-color,
+  $width: 8px,
+  $border-width: 1px
+) {
+  border: solid $color;
+  border-width: 0 $border-width $border-width 0;
+  display: inline-block;
+  padding: 0.5 * ($width - $border-width);
+}
+
+@mixin arrow-color($color) {
+  border-color: $color;
+}
+
+@mixin arrow-rotate-up() {
+  transform: rotate(-135deg);
+}
+
+@mixin arrow-rotate-down() {
+  transform: rotate(45deg);
+}
+
+@mixin arrow-rotate-left() {
+  transform: rotate(135deg);
+}
+
+@mixin arrow-rotate-right() {
+  transform: rotate(-45deg);
+}
+
+@mixin arrow-outline-up(
+  $color: $body-color,
+  $width: 8px,
+  $border-width: 1px
+) {
+  @include arrow-outline-base($color, $width, $border-width);
+  @include arrow-rotate-up();
+}
+
+@mixin arrow-outline-down(
+  $color: $body-color,
+  $width: 8px,
+  $border-width: 1px
+) {
+  @include arrow-outline-base($color, $width, $border-width);
+  @include arrow-rotate-down();
+}
+
+@mixin arrow-outline-left(
+  $color: $body-color,
+  $width: 8px,
+  $border-width: 1px
+) {
+  @include arrow-outline-base($color, $width, $border-width);
+  @include arrow-rotate-left();
+}
+
+@mixin arrow-outline-right(
+  $color: $body-color,
+  $width: 8px,
+  $border-width: 1px
+) {
+  @include arrow-outline-base($color, $width, $border-width);
+  @include arrow-rotate-right();
+}

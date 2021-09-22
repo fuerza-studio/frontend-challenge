@@ -1,0 +1,31 @@
+// Remove unit from a given value.
+@function strip-unit($value) {
+  @if (type-of($value) == 'number' and not unitless($value)) {
+    @return $value / ($value * 0 + 1);
+  }
+
+  @return $value;
+}
+
+// Convert pixels to rem.
+@function px-to-rem($value: 16px, $base: 16px) {
+  @return (strip-unit($value) / strip-unit($base)) * 1rem;
+}
+
+// Convert pixels to em.
+@function px-to-em($value: 16px, $base: 16px) {
+  @return (strip-unit($value) / strip-unit($base)) * 1em;
+}
+
+// Convert Adobe XD values to em (usually for letter-spacing).
+@function xd-to-em($spacing) {
+  @return (strip-unit($spacing) / 1000) * 1em;
+}
+
+@function color($name, $colors: $colors) {
+  @return var(--#{$variable-prefix}#{$name}, #{map-get($colors, $name)});
+}
+
+@function font-size($size, $font-sizes: $font-size) {
+  @return var(--#{$variable-prefix}font-size-#{$size}, #{map-get($font-sizes, $size)});
+}

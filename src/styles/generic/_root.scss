@@ -1,0 +1,5 @@
+:root {
+  @each $size, $value in $font-sizes {
+    --#{$variable-prefix}font-size-#{$size}: #{px-to-rem($value)};
+  }
+}

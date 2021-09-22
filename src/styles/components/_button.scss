@@ -1,0 +1,95 @@
+/**
+ *
+ * Button
+ *
+ */
+
+.btn {
+  @include btn;
+
+  &-primary {
+    @include button-size(px-to-rem(10px), px-to-rem(28px), $font-size-base, px-to-rem(100px));
+    background: #07a;
+    color: color('white');
+  }
+}
+
+/**
+ *
+ * Button Burger
+ * Button Nav
+ *
+ */
+
+.btn-nav {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: $white;
+  display: none;
+  font-size: 0;
+  line-height: 0;
+  padding-top: px-to-rem(14px);
+  position: relative;
+  width: px-to-rem(25px);
+  z-index: 15;
+
+  @include mobile-down {
+    display: block;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  span::after,
+  &::after,
+  &::before {
+    background: currentColor;
+    content: '';
+    height: px-to-rem(2px);
+    left: 0;
+    position: absolute;
+    transition-duration: $trs;
+    transition-property: top, transform, visibility, opacity;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+  }
+
+  span::after {
+    top: 0;
+  }
+
+  &::after {
+    top: px-to-rem(6px);
+  }
+
+  &::before {
+    top: px-to-rem(12px);
+  }
+
+  &.active {
+    span::after,
+    &::after,
+    &::before {
+      background: currentColor;
+    }
+
+    span::after {
+      top: px-to-rem(6px);
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      top: px-to-rem(6px);
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      opacity: 0;
+      top: px-to-rem(6px);
+      transform: translateX(100%);
+      visibility: hidden;
+    }
+  }
+}
