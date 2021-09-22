@@ -51,7 +51,7 @@ You'll find more comments on HTML file explaining more detailed about what to do
 
 ### What we expect?
 - Ability to understand a new one structure;
-- Delivery a perfect-pixel and responsiveness layout;
+- Delivery a [perfect-pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) and responsiveness layout;
 - Ability to delivery a clean code project that others developers can understand;
 - The use of [BEMCSS](http://getbem.com/) pattern;
 - The use of [component-driven](https://www.componentdriven.org/) methodology;
