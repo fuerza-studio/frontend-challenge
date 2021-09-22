@@ -1,6 +1,6 @@
-# Front-end boilerplate
-
-A modern Front-end boilerplate which uses the Webpack module bundler.
+# Front-end challenge
+Would you like to be part of a great team? Contribute with so manu amazing project?
+So, let's start by challenging you to create a front-end page with cool things.
 
 ## Summary
 
