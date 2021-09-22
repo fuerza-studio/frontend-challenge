@@ -2,13 +2,13 @@
   "name": "frontend-boilerplate",
   "description": "A modern Front-end boilerplate which uses the Webpack module bundler.",
   "author": {
-    "name": "Paulo Ferreira",
-    "email": "paulo.mateus.f@gmail.com",
-    "url": "https://github.com/paulomfr"
+    "name": "Fuerza Studio",
+    "email": "paulo@fuerzastudio.com",
+    "url": "http://fuerzastudio.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulomfr/frontend-boilerplate"
+    "url": "https://github.com/Fuerza-Studio/frontend-challenge"
   },
   "version": "1.0.0",
   "main": "index.js",
