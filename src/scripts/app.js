@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 export default class App {
   constructor(components) {
     this.components = components;
@@ -11,7 +9,7 @@ export default class App {
     }
 
     this.components.forEach((component) => {
-      const componentExists = component.selector && $(component.selector).length > 0;
+      const componentExists = component.selector && !!document.querySelector(component.selector);
 
       if (componentExists) {
         component.bootstrap();
