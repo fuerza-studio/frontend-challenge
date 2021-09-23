@@ -65,9 +65,11 @@ You can find the layout [here](https://xd.adobe.com/view/69a63362-cda6-4ac4-b225
 
 - Create a new repository and set it **private**;
 - Clone this repository;
-- Add your private remote as a remote, so you can push it; `git remote add upstream git@github.com:YOUR_USERNAME/frontend-challenge.git`
-- Create a new branch; `git checkout -b challenge`
-- After you've finished your code, push to your repositoru: `git push upstream challenge`
+- Add your private repository as a remote, so you can push it:
+  `git remote add upstream git@github.com:YOUR_USERNAME/frontend-challenge.git`
+- Create a new branch:
+  `git checkout -b challenge`
+- After you've finished your code, push to your repository: `git push upstream challenge`
 - Add @fuerzastudio as a collaborator for it. This GitHub account (@fuerzastudio) is solely used by Fuerza engineers to download and review it.
 
 Good Luck! 🤞🏽
