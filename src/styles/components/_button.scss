@@ -68,7 +68,7 @@
     top: px-to-rem(12px);
   }
 
-  &.active {
+  &.is-active {
     span::after,
     &::after,
     &::before {
