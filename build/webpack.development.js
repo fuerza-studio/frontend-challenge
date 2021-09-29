@@ -48,7 +48,7 @@ const plugins = [
     configFile: rootPath('.stylelintrc.json'),
   }),
   new MiniCssExtractPlugin({
-    filename: 'styles.css',
+    filename: 'styles/styles.css',
   }),
 ];
 
@@ -104,22 +104,29 @@ module.exports = {
       /**
        * Handle styles.
        */
-      {
+       {
         test: tests.styles,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: srcPath(),
-            },
+              publicPath: '../',
+            }
           },
           'css-loader',
           {
             loader: 'postcss-loader',
-            options: postcss,
+            options: postcss
           },
-          'sass-loader',
-        ],
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                outputStyle: 'compact'
+              },
+            },
+          },
+        ]
       },
 
       /**
@@ -127,15 +134,10 @@ module.exports = {
        */
       {
         test: tests.images,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        },
       },
 
       /**
@@ -143,15 +145,10 @@ module.exports = {
        */
       {
         test: tests.fonts,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        },
       },
     ],
   },

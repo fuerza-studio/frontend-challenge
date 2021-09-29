@@ -31,6 +31,24 @@ After builded you can serve using the `http-server` package, by default the port
 #### `yarn lint`
 Run lint for JavaScript and SASS.
 
+## Importing assets
+In order to process any asset (images, fonts, scripts, styles etc.) that asset must be at least one of the following:
+- imported in the main `index.js` or any other file imported into it.
+- referenced in the main `index.scss` or any other file imported into it.
+
+This way only assets that are used will be processed, rather than every single file.
+
+To help with importing assets, the webpack configuration supports a number of resolve aliases and module directories for easier asset referencing:
+
+| Alias in JavaScript | Alias in SASS | Resolve |
+| --- | --- |--- |
+| `~/` | `~` | `node_modules/` |
+| `@scripts/` | `~@scripts/` | `src/scripts/` |
+| `@styles/` | `~@styles/` | `src/styles/` |
+| `@images/` | `~@images/` | `src/images/` |
+| `@fonts/` | `~@fonts/` | `src/fonts/` |
+| `@dist/` | `~@dist/` | `dist/` |
+
 ## Features
 - [SASS](https://sass-lang.com/) + [PostCSS](https://github.com/postcss/postcss) for stylesheets.
 - ES6 for JavaScript. 

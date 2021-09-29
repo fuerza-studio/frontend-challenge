@@ -12,7 +12,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
  * Internal dependencies.
  * 
  */
-const { srcPath, tests } = require('./lib/utils');
+const { srcPath, tests, assetFilename, srcFonts } = require('./lib/utils');
 const postcss = require('./postcss');
 
 /**
@@ -43,7 +43,7 @@ const plugins = [
     filename: 'index.html'
   }),
   new MiniCssExtractPlugin({
-    filename: 'styles.css'
+    filename: 'styles/styles.css',
   })
 ];
 
@@ -105,7 +105,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: srcPath(),
+              publicPath: '../',
             }
           },
           'css-loader',
@@ -113,7 +113,14 @@ module.exports = {
             loader: 'postcss-loader',
             options: postcss
           },
-          'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                outputStyle: 'compact'
+              },
+            },
+          },
         ]
       },
 
@@ -122,31 +129,21 @@ module.exports = {
        */
       {
         test: tests.images,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        },
       },
 
       /**
        * Handle fonts.
        */
-       {
+      {
         test: tests.fonts,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        },
       },
     ]
   },
@@ -163,9 +160,9 @@ module.exports = {
    * Setup optimizations.
    * 
    */
-  optimization: {
-    minimize: true
-  },
+  // optimization: {
+  //   minimize: true
+  // },
 
   /**
    * 
