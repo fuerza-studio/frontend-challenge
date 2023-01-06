@@ -8,16 +8,18 @@
 </head>
 <body>
   <!-- start-header -->
-  <header class="header" data-component="header">
+  <header class="c-header">
     <div class="container">
-      <div class="header__body">
-        <div class="header__logo">
-          <a href="#" class="logo">
+      <div class="c-header__body">
+        <div class="c-header__logo">
+          <a href="#" class="c-logo">
             <!-- Logo goes here -->
           </a>
         </div>
-        <div class="header__menu" data-element="menu">
-          <ul class="menu menu-main">
+
+        <div class="c-header__menu" data-element="menu">
+          <!-- start-menu: WordPress structure, do not modify it. -->
+          <ul class="c-menu c-menu-main">
             <li class="menu-item">
               <a href="#">A Empresa</a>
             </li>
@@ -34,11 +36,11 @@
               <a href="#">Fale Conosco</a>
             </li>
           </ul>
+          <!-- end-menu -->
         </div>
 
         <button
           class="btn-nav"
-          data-element="toggle-menu"
           aria-controls="navbar"
           aria-expanded="true"
           aria-label="Toggle navigation"
@@ -51,29 +53,28 @@
   <!-- /end-header -->
 
   <!-- start-hero -->
-  <section class="hero">
+  <section class="s-hero">
     <!--
       - You should put your markup here.
       - Don't forget to follow the BEMCSS conventional classes.
-      - The background should be fixed (will not change when pass over slides).
-      - We use the Swiper (https://swiperjs.com) as our default library.
+      - We use the Swiper (https://swiperjs.com) as our slider default library.
      -->
   </section>
   <!-- /end-hero -->
 
-  <!-- start-short-content -->
-  <section class="short-content">
+  <!-- start-info-boxes -->
+  <section class="s-info-boxes">
     <div class="container">
       <!--
         - Style de card short-content
         - Add it to a grid list.
        -->
-      <div class="card-short-content">
-        <figure class="card-short-content__figure">
+      <div class="c-card-info-box">
+        <figure class="c-card-info-box__figure">
           <img src="/images/awesome-futbol.svg" alt="" />
         </figure>
-        <div class="card-short-content__inner">
-          <h3 class="card-short-content__title">Lorem Ipsum is simple dummy!</h3>
+        <div class="c-card-info-box__inner">
+          <h3 class="c-card-info-box__title">Lorem Ipsum is simple dummy!</h3>
           <div class="the-content">
             <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took</p>
           </div>
@@ -81,33 +82,43 @@
       </div>
     </div>
   </section>
-  <!-- /end-short-content -->
+  <!-- /end-info-boxes -->
 
-  <!-- start-blog -->
-  <section class="blog">
+  <!-- start-testimonials -->
+  <section class="s-testimonials">
+    <!--
+      - You should put your markup here.
+      - Don't forget to follow the BEMCSS conventional classes.
+      - We use the Swiper (https://swiperjs.com) as our slider default library.
+     -->
+  </section>
+  <!-- /end-testimonials -->
+
+  <!-- start-last-posts -->
+  <section class="s-last-posts">
     <div class="container">
-      <div class="card-post">
+      <article class="c-card-post">
         <!--
           - Create your own card-post markup;
           - Style it.
           - Add it to a grid list.
           - Don't forget that all the page should be responsible.
          -->
-      </div>
+      </article>
     </div>
   </section>
-  <!-- /end-blog -->
-  
+  <!-- /end-last-posts -->
+
   <!-- start-cta -->
-  <div class="cta">
+  <div class="s-cta">
     <!--
       - Put your CTA (call-to-action) markup here.
     -->
   </div>
   <!-- /end-cta -->
-  
+
   <!-- start-footer -->
-  <footer class="footer">
+  <footer class="c-footer">
     <!--
       - Put your Footer markup here.
     -->
