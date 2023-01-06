@@ -17,10 +17,13 @@ We saw that you are interested in our challenge. So get ready, because it will t
 - [Requirements](#requirements)
 
 ## The challenge
-This challenge will test your skills as a front-end developer to work with the biggest CMS on the web, WordPress. Some HTML are already included as they are what WP itselv delivers by default, so they cannot be changed.
+This challenge will test your skills as a front-end developer to work with the biggest CMS on the web, WordPress. Some HTML are already included as they are what WP itself delivers by default, so they cannot be changed.
 
 ### What we need to be done
 Develop the proposed layout with the **maximum** fidelity possible (we care a lot about the quality of delivery) and with a clean and reusable code.
+
+### Deadline
+We expect that you deliver this challenge around of 7 days.
 
 ### Layout
 You can find the layout [here](https://www.figma.com/file/VDkvi1LXOp0lLCPg91tfAW/Front-end-Test?node-id=0%3A1&t=0ZPK70iy8ZhsvPhG-0).
