@@ -4,17 +4,46 @@
   </a>
 </p>
 
-# Front-end challenge
-Would you like to be part of a great team? Contribute with so many amazing project?
-So, let's start by challenging you to create a front-end page with cool things.
+# Front-end challenge (entry-level)
+We saw that you are interested in our challenge. So get ready, because it will test your skills in: HTML, CSS and JavaScript, so that you can demonstrate your full potential to work with amazing projects.
 
 ## Summary
 
+- [The challenge]($the-challenge)
+- [How to delivery](#how-to-delivery)
 - [Quick Overview]($quick-overview)
+- [Importing Assets]($importing-assets)
 - [Features](#features)
 - [Requirements](#requirements)
-- [Challenge](#challenge)
-- [How to delivery](#how-to-delivery)
+
+## The challenge
+This challenge will test your skills as a front-end developer to work with the biggest CMS on the web, WordPress. Some HTML are already included as they are what WP itselv delivers by default, so they cannot be changed.
+
+### What we need to be done
+Develop the proposed layout with the **maximum** fidelity possible (we care a lot about the quality of delivery) and with a clean and reusable code.
+
+### Layout
+You can find the layout [here](https://www.figma.com/file/VDkvi1LXOp0lLCPg91tfAW/Front-end-Test?node-id=0%3A1&t=0ZPK70iy8ZhsvPhG-0).
+
+### What we expect?
+- Ability to understand a new one structure;
+- Delivery a [perfect-pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) and responsiveness layout;
+- Ability to delivery a clean code project that others developers can understand;
+- The use of [BEMCSS](http://getbem.com/) pattern;
+- The use of [component-driven](https://www.componentdriven.org/) methodology;
+
+## How to delivery
+[Cloning the repository](https://www.loom.com/share/db15fe7da3e54f928acbaf81eade3f08)
+
+- Create a new repository and set it **private**;
+- Clone this repository;
+- Add your private repository as a remote, so you can push it:
+  `git remote add upstream git@github.com:YOUR_USERNAME/frontend-challenge.git`
+- Create a new branch:
+  `git checkout -b challenge`
+- After you've finished your code, push to your repository: `git push upstream challenge`
+- Publish the result on a free server (heroku, netlify, etc)
+- Add @fuerzastudio as a collaborator for it (**only after finished**). This GitHub account (@fuerzastudio) is solely used by Fuerza engineers to download and review it.
 
 ## Quick Overview
 
@@ -61,34 +90,3 @@ To help with importing assets, the webpack configuration supports a number of re
 ## Requirements
 - [Node.js](https://nodejs.org/en/) >= 12
 - [Yarn](https://yarnpkg.com/en/) or NPM
-
-## Challenge
-
-### What you need to do?
-Develop the proposed layout, understanding our structure and following our patterns.
-You'll find more comments on HTML file explaining more detailed about what to do on each section.
-
-### What we expect?
-- Ability to understand a new one structure;
-- Delivery a [perfect-pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) and responsiveness layout;
-- Ability to delivery a clean code project that others developers can understand;
-- The use of [BEMCSS](http://getbem.com/) pattern;
-- The use of [component-driven](https://www.componentdriven.org/) methodology;
-
-### Layout
-You can find the layout [here](https://xd.adobe.com/view/69a63362-cda6-4ac4-b225-0ba7162b4e42-3cf5/grid).
-
-## How to delivery
-[Video](https://www.loom.com/share/db15fe7da3e54f928acbaf81eade3f08)
-
-- Create a new repository and set it **private**;
-- Clone this repository;
-- Add your private repository as a remote, so you can push it:
-  `git remote add upstream git@github.com:YOUR_USERNAME/frontend-challenge.git`
-- Create a new branch:
-  `git checkout -b challenge`
-- After you've finished your code, push to your repository: `git push upstream challenge`
-- Publish the result on a free server (heroku, netlify, etc)
-- Add @fuerzastudio as a collaborator for it (**only after finished**). This GitHub account (@fuerzastudio) is solely used by Fuerza engineers to download and review it.
-
-Good Luck! 🤞🏽
